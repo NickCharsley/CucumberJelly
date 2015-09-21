@@ -15,10 +15,15 @@ import org.netbeans.jellytools.actions.ActionNoBlock;
  * @author nick
  */
 public class ActionNoBlockSteps {
-/**/
+    /**
+     * Cucumber Jelly Step: I click the $menu menu 
+     * 
+     * Performs a 'menu' click on the appropriate menu Item.
+     * 
+     * @param menu The pipe (|) separated path of the menu to click.
+     */
     @When("^I click the \"([^\"]*)\" menu$")
     public void clickTheMenu(String menu) {
         new ActionNoBlock(menu, null).performMenu();
     }
-/**/    
 }

@@ -215,9 +215,10 @@ public class Cucumber extends ParentRunner<Runner> {
          * @since 1.56
          */
         boolean enableClasspathModules() default false;
+
                 
-        /** By default the {@link #enableModules(java.lang.String)} method
-         * converts all autoloads into regular modules and enables them. This
+        
+        /** By default all autoloads are regular modules and enabled. This
          * is maybe useful in certain situations, but does not really mimic the
          * real behaviour of the system when it is executed. Those who need
          * to as closely as possible simulate the real run, can use
@@ -246,13 +247,13 @@ public class Cucumber extends ParentRunner<Runner> {
          * <p>
          * The usefulness of this method in <em>Maven</em> based environment
          * is not that big. Usually the nbm plugin makes only necessary
-         * JARs available. In combination with {@link #enableClasspathModules(boolean) 
-         * enableClasspathModules(false)}, it may give you a subset of
-         * the Platform loaded in a test. In a
+         * JARs available. In combination with enableClasspathModules(false),
+         * it may give you a subset of the Platform loaded in a test. In a
          * Maven-based app declaring a dependency on the whole 
          * org.netbeans.cluster:platform use the following suite expression:
+         * 
          * <pre>
-         * @(
+         * (
          *     gui=true,
          *     hideExtraModules=true,
          *     enableModules="(?!org.netbeans.modules.autoupdate|org.netbeans.modules.core.kit|org.netbeans.modules.favorites).*",

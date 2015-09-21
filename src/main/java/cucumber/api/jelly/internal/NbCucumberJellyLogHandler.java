@@ -70,7 +70,7 @@ import org.netbeans.junit.NbTestCase;
 /** Registered in 'META-INF/services/java.util.logging.Handler' via
  * special classloader that delegates to FakeMetaInf.txt
  * 
- * @author Jaroslav Tulach <jtulach@netbeans.org>
+ * @author Jaroslav Tulach jtulach@netbeans.org
  */
 public final class NbCucumberJellyLogHandler extends Handler {
     private static StringBuffer text;
@@ -163,6 +163,8 @@ public final class NbCucumberJellyLogHandler extends Handler {
     private static final AtomicInteger ignoreOOME = new AtomicInteger();
     /**
      * Run a thunk while ignoring any OOME that might be thrown.
+     * 
+     * @param run The thunk to run...
      */
     public static void whileIgnoringOOME(Runnable run) {
         ignoreOOME.incrementAndGet();
