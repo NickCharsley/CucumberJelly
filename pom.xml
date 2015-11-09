@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>uk.co.oldnicksoftware</groupId>
     <artifactId>CucumberJelly</artifactId>
-    <version>0.11</version>
+    <version>0.12-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>${project.groupId}:${project.artifactId}</name>
     <description>
@@ -32,7 +32,7 @@
         <connection>scm:git:git@github.com:NickCharsley/CucumberJelly.git</connection>
         <developerConnection>scm:git:git@github.com:NickCharsley/CucumberJelly.git</developerConnection>
         <url>git@github.com:NickCharsley/CucumberJelly.git</url>
-        <tag>CucumberJelly-0.11</tag>
+        <tag>HEAD</tag>
     </scm>    
     <distributionManagement>
         <snapshotRepository>
