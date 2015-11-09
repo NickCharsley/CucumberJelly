@@ -323,6 +323,11 @@ public class Cucumber extends ParentRunner<Runner> {
         }   
 
         public final void checkGlue(){
+            /** 
+             * Have decided that we should not provide glue as esentialy that
+             * was 'training wheels' and so we should avoid.
+             * http://aslakhellesoy.com/post/11055981222/the-training-wheels-came-off             * 
+             * /
             for (String gluePath: cucumberOptions.glue())
             {
                 if (gluePath.equals("cucumber.api.jelly.glue")) {
@@ -340,7 +345,7 @@ public class Cucumber extends ParentRunner<Runner> {
             System.out.println("# to @Options(glue)               #");            
             System.out.println("#                                 #");
             System.out.println("###################################");
-
+            /**/
         }
         
         /**

@@ -10,3 +10,6 @@ This is my first experiment with both Maven and Netbeans Platform so I may have 
 coding style or dependencies or choice of package etc.
 
 If you think its criminal please either help by forking and correcting or leave a *nice* issue and I'll see what can be done.
+
+This is now also hosted on Sonatype's OSSRH at https://oss.sonatype.org/content/repositories/snapshots/uk/co/oldnicksoftware/CucumberJelly 
+with (hopefully) releases making it into the Central Repository.
