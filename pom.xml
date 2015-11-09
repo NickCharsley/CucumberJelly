@@ -9,6 +9,7 @@
     <description>
         A library to allow Cucumber to Work with NetBeans Platform Apps.
     </description>
+    <url>https://github.com/NickCharsley/CucumberJelly</url>
     <licenses>
         <license>
             <name>NetBeans IDE Dual License Header and License</name>        
@@ -19,6 +20,7 @@
         <developer>
             <name>Nick Charsley</name>
             <email>jellytools@oldnicksoftware.co.uk</email>
+            <organization>Old Nick Software</organization>
             <organizationUrl>https://github.com/NickCharsley</organizationUrl>
         </developer>
     </developers>        
